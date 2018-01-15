@@ -1,0 +1,23 @@
+//MOBILE DEVICES
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+    .section-header {
+        padding-bottom: 5px;
+    }
+    .col1, .col2, .col3, .col4, .col5 {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .paragraph1, .paragraph2 {
+        padding-right: 25px;
+    }
+    .feature-list {
+        padding-right: 25px;
+        /*text-align: center;*/
+    }
+    .colored-line {
+        margin: auto auto 10px;
+    }    
+    .section-header h2 {
+        margin-bottom: 10px;
+    }
+}
