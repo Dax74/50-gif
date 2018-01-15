@@ -14,18 +14,13 @@ $my-background: #FFA0C4;        /*Background color that appears inside the box o
     }
 }
 
-.banner-box {
-    margin-bottom: 10px;
-}
-
-.banner-box #banner {
+.banner-box, .banner-box #banner {
     padding: 0px;
+    margin-bottom: 10px;
     max-width: 100%;
+    /*Change the setting below to fit your need*/
     max-height: 100%;       /*set to "auto" to display 250px max-height as the default setting is*/
-    margin-bottom: 0px;
     background-color: $my-background;
-
-    /*Change the parameters below according to your needs*/
     background-image: url("https://i.imgur.com/MU66l6m.jpg");
     background-position: center center;
     background-size: cover;   
