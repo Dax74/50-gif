@@ -1,0 +1,143 @@
+//COLOR VARIABLES
+
+$colored: #E4005B;      /*Line under title and button background*/
+$my-background: #FFA0C4;        /*Background color that appears inside the box on the right (if no image background is set)*/
+
+
+/*---------------------------------------
+   SECTION:  BOXES
+-----------------------------------------*/
+.section-header {
+    padding-bottom: 20px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.banner-box {
+    margin-bottom: 10px;
+}
+
+.banner-box #banner {
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;       /*set to "auto" to display 250px max-height as the default setting is*/
+    margin-bottom: 0px;
+    background-color: $my-background;
+
+    /*Change the parameters below according to your needs*/
+    background-image: url("https://i.imgur.com/MU66l6m.jpg");
+    background-position: center center;
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+.container::after, .row::after {
+    clear: both;
+}
+
+.row::after {
+    content: " ";
+    display: table;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &::before, &::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+
+//BOX CONTENTS
+.x-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+//BOXES
+.banner-box .single-box {
+    padding-bottom: 20px;
+}
+
+.col1, .col2 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+
+//BOX HEADING POSITIONING
+.banner-box .single-box h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+//COLORED LINE
+.colored-line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 165px;
+    height: 1px;
+    background: $colored;
+}
+
+
+//SINGLE BOX AND CONTENT
+.paragraph1, .paragraph2 {
+    text-align: left;
+    padding-left: 25px;
+}
+.col1 {
+    padding-left: 0px;
+}
+.col2 {
+    padding-left: 15px;
+}
+.col1.single-box, .col2.single-box {
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+//IMAGE-GIF ON THE LEFT BOX
+.middle-img {
+    border-style: none;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    max-width: 100%; 
+    margin: auto auto;
+}
+
+
+//MY NEW BUTTON
+.col2 .btn.btn-icon-text.ember-view {
+    background: $colored;
+}
+#my-button {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+//CLOSE BUTTON ON THE TOP RIGHT
+.banner-box #banner .close {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+}
